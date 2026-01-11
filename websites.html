@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorite Websites - Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        nav {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 1rem 2rem;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #667eea;
+            font-weight: 600;
+            transition: all 0.3s;
+            font-size: 1rem;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+        }
+
+        nav a:hover, nav a.active {
+            background: #667eea;
+            color: white;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .content-section {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 3rem;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+            animation: fadeIn 0.6s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h1 {
+            color: #764ba2;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .website-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .website-card {
+            background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
+            padding: 1.5rem;
+            border-radius: 12px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            border-top: 3px solid #667eea;
+        }
+
+        .website-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .website-card h3 {
+            color: #667eea;
+            margin-bottom: 0.8rem;
+        }
+
+        .website-card p {
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+
+        .website-link {
+            color: #764ba2;
+            text-decoration: none;
+            font-weight: 600;
+            word-break: break-all;
+            display: inline-block;
+            margin-top: 0.5rem;
+        }
+
+        .website-link:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: white;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                gap: 1rem;
+            }
+            nav a {
+                font-size: 0.9rem;
+                padding: 0.4rem 0.8rem;
+            }
+            .content-section {
+                padding: 2rem 1.5rem;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+            .website-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="assignments.html">Assignments</a></li>
+            <li><a href="activities.html">Activities</a></li>
+            <li><a href="reflection.html">Reflection</a></li>
+            <li><a href="websites.html" class="active">Favorite Websites</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="content-section">
+            <h1>Favorite Academic & Scientific Websites</h1>
+            
+            <div class="website-grid">
+                <div class="website-card">
+                    <h3>🌐 MDN Web Docs</h3>
+                    <p>Comprehensive resource for web developers with detailed documentation on HTML, CSS, and JavaScript. Essential for learning web technologies.</p>
+                    <a href="https://developer.mozilla.org" target="_blank" class="website-link">developer.mozilla.org →</a>
+                </div>
+
+                <div class="website-card">
+                    <h3>📚 Stack Overflow</h3>
+                    <p>World's largest community for programmers to learn, share knowledge, and build careers. Great for finding solutions to coding problems.</p>
+                    <a href="https://stackoverflow.com" target="_blank" class="website-link">stackoverflow.com →</a>
+                </div>
+
+                <div class="website-card">
+                    <h3>🎓 IEEE Xplore</h3>
+                    <p>Digital library providing access to technical literature in engineering and technology. Excellent for academic research papers.</p>
+                    <a href="https://ieeexplore.ieee.org" target="_blank" class="website-link">ieeexplore.ieee.org →</a>
+                </div>
+
+                <div class="website-card">
+                    <h3>💡 GitHub</h3>
+                    <p>Platform for version control and collaboration, hosting millions of open-source projects. Essential for modern development.</p>
+                    <a href="https://github.com" target="_blank" class="website-link">github.com →</a>
+                </div>
+
+                <div class="website-card">
+                    <h3>📖 Google Scholar</h3>
+                    <p>Search engine for scholarly literature across many disciplines and sources. Perfect for academic research.</p>
+                    <a href="https://scholar.google.com" target="_blank" class="website-link">scholar.google.com →</a>
+                </div>
+
+                <div class="website-card">
+                    <h3>🔬 arXiv</h3>
+                    <p>Open-access repository of electronic preprints for scientific papers in various fields including computer science.</p>
+                    <a href="https://arxiv.org" target="_blank" class="website-link">arxiv.org →</a>
+                </div>
+
+                <div class="website-card">
+                    <h3>💻 W3Schools</h3>
+                    <p>Free online tutorials and references for web development. Great for beginners learning programming.</p>
+                    <a href="https://www.w3schools.com" target="_blank" class="website-link">w3schools.com →</a>
+                </div>
+
+                <div class="website-card">
+                    <h3>🎯 Coursera</h3>
+                    <p>Online learning platform offering courses from top universities and companies worldwide.</p>
+                    <a href="https://www.coursera.org" target="_blank" class="website-link">coursera.org →</a>
+                </div>
+
+                <div class="website-card">
+                    <h3>📝 ResearchGate</h3>
+                    <p>Social networking site for scientists and researchers to share papers, ask questions, and collaborate.</p>
+                    <a href="https://www.researchgate.net" target="_blank" class="website-link">researchgate.net →</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
+    </footer>
+</body>
+</html>
