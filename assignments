@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الواجبات - ملف الإنجاز</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Menu -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">ملف الإنجاز</div>
+            <ul class="nav-menu">
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="assignments.html" class="active">الواجبات</a></li>
+                <li><a href="activities.html">الأنشطة</a></li>
+                <li><a href="reflection.html">التأمل</a></li>
+                <li><a href="resources.html">المصادر</a></li>
+                <li><a href="contact.html">التواصل</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <div class="page-header">
+        <div class="container">
+            <h1>📚 الواجبات والمشاريع</h1>
+            <p>جميع الواجبات والمشاريع الدراسية المنجزة خلال الفصل</p>
+        </div>
+    </div>
+
+    <!-- Assignments Content -->
+    <section class="content-section">
+        <div class="container">
+            
+            <!-- Assignment 1 -->
+            <div class="assignment-card">
+                <h3>الواجب الأول: مقدمة في البرمجة</h3>
+                <p class="date">تاريخ التسليم: 15 سبتمبر 2025</p>
+                <p>وصف الواجب: إنشاء برنامج بسيط بلغة Python لحساب المتوسط الحسابي لمجموعة من الأرقام.</p>
+                <div class="assignment-files">
+                    <a href="files/assignment1.pdf" class="file-link" target="_blank">
+                        📄 عرض الواجب (PDF)
+                    </a>
+                    <a href="files/assignment1.py" class="file-link" target="_blank">
+                        💻 ملف الكود (Python)
+                    </a>
+                </div>
+            </div>
+
+            <!-- Assignment 2 -->
+            <div class="assignment-card">
+                <h3>الواجب الثاني: هياكل البيانات</h3>
+                <p class="date">تاريخ التسليم: 30 سبتمبر 2025</p>
+                <p>وصف الواجب: تطبيق خوارزميات الفرز والبحث باستخدام المصفوفات والقوائم المترابطة.</p>
+                <div class="assignment-files">
+                    <a href="files/assignment2.pdf" class="file-link" target="_blank">
+                        📄 عرض الواجب (PDF)
+                    </a>
+                    <a href="files/assignment2.zip" class="file-link" target="_blank">
+                        📦 ملفات المشروع (ZIP)
+                    </a>
+                </div>
+            </div>
+
+            <!-- Assignment 3 -->
+            <div class="assignment-card">
+                <h3>الواجب الثالث: قواعد البيانات</h3>
+                <p class="date">تاريخ التسليم: 15 أكتوبر 2025</p>
+                <p>وصف الواجب: تصميم قاعدة بيانات لنظام إدارة مكتبة باستخدام MySQL وكتابة استعلامات SQL.</p>
+                <div class="assignment-files">
+                    <a href="files/assignment3.pdf" class="file-link" target="_blank">
+                        📄 عرض الواجب (PDF)
+                    </a>
+                    <a href="files/assignment3.sql" class="file-link" target="_blank">
+                        🗄️ ملف SQL
+                    </a>
+                </div>
+            </div>
+
+            <!-- Assignment 4 -->
+            <div class="assignment-card">
+                <h3>الواجب الرابع: تطوير الويب</h3>
+                <p class="date">تاريخ التسليم: 1 نوفمبر 2025</p>
+                <p>وصف الواجب: إنشاء موقع ويب تفاعلي باستخدام HTML, CSS, و JavaScript.</p>
+                <div class="assignment-files">
+                    <a href="files/assignment4.pdf" class="file-link" target="_blank">
+                        📄 عرض الواجب (PDF)
+                    </a>
+                    <a href="files/assignment4-demo.html" class="file-link" target="_blank">
+                        🌐 النسخة التجريبية
+                    </a>
+                    <a href="files/assignment4.zip" class="file-link" target="_blank">
+                        📦 ملفات المشروع (ZIP)
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project -->
+            <div class="assignment-card">
+                <h3>المشروع النهائي: نظام إدارة الطلاب</h3>
+                <p class="date">تاريخ التسليم: 20 ديسمبر 2025</p>
+                <p>وصف المشروع: تطوير نظام متكامل لإدارة بيانات الطلاب يتضمن واجهة مستخدم، قاعدة بيانات، وإمكانية إضافة وتعديل وحذف السجلات.</p>
+                <div class="assignment-files">
+                    <a href="files/final-project.pdf" class="file-link" target="_blank">
+                        📄 تقرير المشروع (PDF)
+                    </a>
+                    <a href="files/final-project-presentation.pptx" class="file-link" target="_blank">
+                        📊 العرض التقديمي (PPT)
+                    </a>
+                    <a href="files/final-project.zip" class="file-link" target="_blank">
+                        📦 ملفات المشروع الكاملة (ZIP)
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 ملف الإنجاز - اسم الطالب. جميع الحقوق محفوظة.</p>
+            <p>تم الإنشاء كمتطلب لمقرر [اسم المقرر]</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
