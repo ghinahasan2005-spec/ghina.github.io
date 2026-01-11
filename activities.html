@@ -1,138 +1,111 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>الأنشطة - ملف الإنجاز</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Activities | Ghina Hasan</title>
+  <link rel="stylesheet" href="../style/style.css"/>
+  <script defer src="../script/main.js"></script>
 </head>
-<body>
-    <!-- Navigation Menu -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="nav-brand">ملف الإنجاز</div>
-            <ul class="nav-menu">
-                <li><a href="index.html">الرئيسية</a></li>
-                <li><a href="assignments.html">الواجبات</a></li>
-                <li><a href="activities.html" class="active">الأنشطة</a></li>
-                <li><a href="reflection.html">التأمل</a></li>
-                <li><a href="resources.html">المصادر</a></li>
-                <li><a href="contact.html">التواصل</a></li>
-            </ul>
-            <div class="menu-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </nav>
 
-    <!-- Page Header -->
-    <div class="page-header">
-        <div class="container">
-            <h1>🎯 الأنشطة اللامنهجية</h1>
-            <p>العمل التطوعي، الأنشطة الطلابية، والمشاركات في المؤتمرات والمسابقات</p>
-        </div>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="../index.html"><span class="brand-dot"></span><span class="brand-text">Ghina Hasan</span></a>
+      <nav class="nav" aria-label="Primary">
+        <a class="nav-link" href="../index.html">Home</a>
+        <a class="nav-link" href="../assignments/">Assignments</a>
+        <a class="nav-link active" href="./">Activities</a>
+        <a class="nav-link" href="../reflection/">Reflection</a>
+        <a class="nav-link" href="../resources/">Resources</a>
+        <a class="nav-link" href="../contact/">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <button class="btn btn-ghost" id="themeBtn" type="button" aria-label="Toggle theme">🌙</button>
+        <button class="btn btn-ghost mobile-menu-btn" id="menuBtn" type="button" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+    <div class="mobile-nav" id="mobileNav" aria-label="Mobile menu">
+      <a href="../index.html" class="mobile-link">Home</a>
+      <a href="../assignments/" class="mobile-link">Assignments</a>
+      <a href="./" class="mobile-link">Activities</a>
+      <a href="../reflection/" class="mobile-link">Reflection</a>
+      <a href="../resources/" class="mobile-link">Resources</a>
+      <a href="../contact/" class="mobile-link">Contact</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="page-head">
+      <div class="breadcrumb"><a href="../index.html">Home</a> / <span>Activities</span></div>
+      <h1 class="page-title">Activities</h1>
+      <p class="muted">Class activities, practice work, and participation.</p>
     </div>
 
-    <!-- Activities Content -->
-    <section class="content-section">
-        <div class="container">
-
-            <!-- Introduction Video -->
-            <div class="video-container">
-                <h3>🎥 فيديو التعريف الشخصي</h3>
-                <p>فيديو تعريفي عن نفسي وأهدافي وطموحاتي</p>
-                <video controls poster="images/video-thumbnail.jpg">
-                    <source src="videos/introduction.mp4" type="video/mp4">
-                    متصفحك لا يدعم عرض الفيديو. يمكنك <a href="videos/introduction.mp4">تحميل الفيديو</a> بدلاً من ذلك.
-                </video>
-                <p style="margin-top: 1rem; color: #7f8c8d; font-size: 0.9rem;">
-                    ملاحظة: الرجاء رفع ملف الفيديو الخاص بك في مجلد "videos" واستبدال "introduction.mp4" باسم ملفك.
-                </p>
-            </div>
-
-            <!-- Volunteer Work -->
-            <h2 style="margin: 3rem 0 2rem; color: var(--primary-color);">🤝 العمل التطوعي</h2>
-            
-            <div class="activity-card">
-                <h3>حملة نظافة البيئة</h3>
-                <p class="date">سبتمبر 2025</p>
-                <p>المشاركة في حملة تطوعية لتنظيف الحدائق العامة والشواطئ في المدينة. تم جمع أكثر من 500 كيلوغرام من النفايات.</p>
-                <p><strong>المهارات المكتسبة:</strong> العمل الجماعي، التنظيم، المسؤولية البيئية</p>
-            </div>
-
-            <div class="activity-card">
-                <h3>تعليم البرمجة للأطفال</h3>
-                <p class="date">أكتوبر 2025</p>
-                <p>المشاركة في برنامج تطوعي لتعليم أساسيات البرمجة للأطفال في المدارس الحكومية باستخدام Scratch وPython.</p>
-                <p><strong>المهارات المكتسبة:</strong> التدريس، التواصل، الصبر، مهارات العرض</p>
-            </div>
-
-            <!-- Student Activities -->
-            <h2 style="margin: 3rem 0 2rem; color: var(--primary-color);">🎓 الأنشطة الطلابية</h2>
-
-            <div class="activity-card">
-                <h3>عضو في نادي البرمجة والذكاء الاصطناعي</h3>
-                <p class="date">سبتمبر 2025 - الآن</p>
-                <p>عضو نشط في نادي البرمجة بالجامعة، حيث أشارك في ورش العمل والمشاريع الجماعية وتطوير تطبيقات مبتكرة.</p>
-                <p><strong>الإنجازات:</strong> تطوير تطبيق جوال لإدارة المهام، المشاركة في 5 ورش عمل</p>
-            </div>
-
-            <div class="activity-card">
-                <h3>منظم فعالية "يوم التقنية"</h3>
-                <p class="date">نوفمبر 2025</p>
-                <p>المساهمة في تنظيم فعالية جامعية شملت محاضرات وورش عمل في مجال التكنولوجيا والابتكار، بحضور أكثر من 200 طالب.</p>
-                <p><strong>المهارات المكتسبة:</strong> القيادة، التخطيط، إدارة الفعاليات</p>
-            </div>
-
-            <!-- Conferences & Competitions -->
-            <h2 style="margin: 3rem 0 2rem; color: var(--primary-color);">🏆 المؤتمرات والمسابقات</h2>
-
-            <div class="activity-card">
-                <h3>مسابقة البرمجة الجامعية</h3>
-                <p class="date">أكتوبر 2025</p>
-                <p>المشاركة في مسابقة البرمجة السنوية على مستوى الجامعة، وتحقيق المركز الثالث من بين 50 فريقاً مشاركاً.</p>
-                <p><strong>الجائزة:</strong> المركز الثالث - شهادة تقدير وجائزة نقدية</p>
-                <p><strong>التحدي:</strong> حل 7 مسائل برمجية خلال 3 ساعات</p>
-            </div>
-
-            <div class="activity-card">
-                <h3>حضور مؤتمر التكنولوجيا الوطني</h3>
-                <p class="date">نوفمبر 2025</p>
-                <p>حضور المؤتمر الوطني للتكنولوجيا والابتكار، والاستماع لمحاضرات من خبراء في مجال الذكاء الاصطناعي والأمن السيبراني.</p>
-                <p><strong>الفائدة:</strong> التعرف على أحدث التقنيات والاتجاهات في المجال، التواصل مع المحترفين</p>
-            </div>
-
-            <!-- Hobbies -->
-            <h2 style="margin: 3rem 0 2rem; color: var(--primary-color);">🎨 الهوايات والاهتمامات</h2>
-
-            <div class="activity-card">
-                <h3>القراءة والمطالعة</h3>
-                <p>شغوف بقراءة الكتب التقنية والروايات الأدبية. أقرأ بمعدل كتاب واحد أسبوعياً في مجالات متنوعة مثل البرمجة، الذكاء الاصطناعي، التطوير الذاتي، والأدب.</p>
-            </div>
-
-            <div class="activity-card">
-                <h3>التصوير الفوتوغرافي</h3>
-                <p>هواية التصوير الفوتوغرافي، خاصة تصوير الطبيعة والمعمار. أستخدم هذه الهواية لتطوير مهارات الإبداع والتفكير البصري.</p>
-            </div>
-
-            <div class="activity-card">
-                <h3>الرياضة والنشاط البدني</h3>
-                <p>ممارسة رياضة كرة القدم والسباحة بانتظام. أؤمن بأهمية التوازن بين الصحة البدنية والعقلية لتحقيق الإنتاجية الأكاديمية.</p>
-            </div>
-
+    <div class="list">
+      <article class="item">
+        <div class="item-top">
+          <h3>Activity 1 — Title Here</h3>
+          <span class="pill">In class</span>
         </div>
+        <p>What you did + what you learned (short).</p>
+      </article>
+
+      <article class="item">
+        <div class="item-top">
+          <h3>Activity 2 — Title Here</h3>
+          <span class="pill">Teamwork</span>
+        </div>
+        <p>Short summary.</p>
+      </article>
+
+      <article class="item">
+        <div class="item-top">
+          <h3>Activity 3 — Title Here</h3>
+          <span class="pill">Practice</span>
+        </div>
+        <p>Short summary.</p>
+      </article>
+
+      <article class="item">
+        <div class="item-top">
+          <h3>Activity 4 — Title Here</h3>
+          <span class="pill">Workshop</span>
+        </div>
+        <p>Short summary.</p>
+      </article>
+    </div>
+
+    <section class="section" id="video">
+      <div class="section-head">
+        <h2>Intro Video</h2>
+        <p class="muted">Add your 1+ minute video here.</p>
+      </div>
+
+      <div class="note">
+        If your video is on YouTube: click Share → Embed → copy the link inside the iframe below.
+      </div>
+
+      <div class="video-wrap" style="margin-top:12px;">
+        <!-- Replace the src with your video embed link -->
+        <iframe
+          src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+          title="Intro Video"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
     </section>
+  </main>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2026 ملف الإنجاز - اسم الطالب. جميع الحقوق محفوظة.</p>
-            <p>تم الإنشاء كمتطلب لمقرر [اسم المقرر]</p>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="muted">© <span id="year"></span> Ghina Hasan • Activities</p>
+      <div class="footer-links">
+        <a href="../contact/">Contact</a>
+        <a href="../resources/">Resources</a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
