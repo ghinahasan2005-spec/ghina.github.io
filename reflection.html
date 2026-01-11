@@ -11,7 +11,10 @@
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="index.html"><span class="brand-dot"></span><span>Ghina Hasan</span></a>
+      <a class="brand" href="index.html">
+        <span class="brand-dot"></span>
+        <span>Ghina Hasan</span>
+      </a>
 
       <nav class="nav" aria-label="Primary">
         <a class="nav-link" href="index.html">Home</a>
@@ -23,12 +26,12 @@
       </nav>
 
       <div class="header-actions">
-        <button class="btn btn-ghost" id="themeBtn" type="button">🌙</button>
-        <button class="btn btn-ghost mobile-menu-btn" id="menuBtn" type="button">☰</button>
+        <button class="btn btn-ghost" id="themeBtn" type="button" aria-label="Toggle theme">🌙</button>
+        <button class="btn btn-ghost mobile-menu-btn" id="menuBtn" type="button" aria-label="Open menu">☰</button>
       </div>
     </div>
 
-    <div class="mobile-nav" id="mobileNav">
+    <div class="mobile-nav" id="mobileNav" aria-label="Mobile menu">
       <a href="index.html" class="mobile-link">Home</a>
       <a href="assignments.html" class="mobile-link">Assignments</a>
       <a href="activities.html" class="mobile-link">Activities</a>
@@ -41,7 +44,7 @@
   <main class="container">
     <div class="page-head">
       <h1 class="page-title">Reflection</h1>
-      <p class="muted">Weekly reflections about what I learned and improved.</p>
+      <p class="muted">Short weekly reflections about what I learned and improved.</p>
     </div>
 
     <div class="item">
@@ -49,7 +52,9 @@
         <h2 style="margin:0;">Week 1 Reflection</h2>
         <span class="pill">Week 1</span>
       </div>
-      <p class="muted">Write 4–6 lines: what you learned, what was challenging, and what you improved.</p>
+      <p class="muted">
+        Write 4–6 lines: what you learned, what was confusing, and how you improved.
+      </p>
     </div>
 
     <div class="item">
@@ -67,13 +72,27 @@
       </div>
       <p class="muted">Write your reflection here.</p>
     </div>
+
+    <div class="item">
+      <div class="item-top">
+        <h2 style="margin:0;">Week 4 Reflection</h2>
+        <span class="pill">Week 4</span>
+      </div>
+      <p class="muted">Write your reflection here.</p>
+    </div>
+
+    <div class="card">
+      <p class="muted" style="margin:0;">
+        Tip: Teachers love reflections that mention “what I tried”, “what I fixed”, and “what I will do next time”.
+      </p>
+    </div>
   </main>
 
   <footer class="site-footer">
     <div class="container footer-inner">
       <p class="muted">© <span id="year"></span> Ghina Hasan</p>
       <div class="footer-links">
-        <a href="index.html">Home</a>
+        <a href="resources.html">Resources</a>
         <a href="contact.html">Contact</a>
       </div>
     </div>
