@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Activities | Ghina Hasan</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
 </head>
 
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="../index.html"><span class="brand-dot"></span><span class="brand-text">Ghina Hasan</span></a>
+      <a class="brand" href="index.html"><span class="brand-dot"></span><span>Ghina Hasan</span></a>
+
       <nav class="nav" aria-label="Primary">
         <a class="nav-link" href="index.html">Home</a>
         <a class="nav-link" href="assignments.html">Assignments</a>
@@ -20,90 +21,68 @@
         <a class="nav-link" href="resources.html">Resources</a>
         <a class="nav-link" href="contact.html">Contact</a>
       </nav>
+
       <div class="header-actions">
-        <button class="btn btn-ghost" id="themeBtn" type="button" aria-label="Toggle theme">🌙</button>
-        <button class="btn btn-ghost mobile-menu-btn" id="menuBtn" type="button" aria-label="Open menu">☰</button>
+        <button class="btn btn-ghost" id="themeBtn" type="button">🌙</button>
+        <button class="btn btn-ghost mobile-menu-btn" id="menuBtn" type="button">☰</button>
       </div>
     </div>
-    <div class="mobile-nav" id="mobileNav" aria-label="Mobile menu">
-      <a href="../index.html" class="mobile-link">Home</a>
-      <a href="../assignments/" class="mobile-link">Assignments</a>
-      <a href="./" class="mobile-link">Activities</a>
-      <a href="../reflection/" class="mobile-link">Reflection</a>
-      <a href="../resources/" class="mobile-link">Resources</a>
-      <a href="../contact/" class="mobile-link">Contact</a>
+
+    <div class="mobile-nav" id="mobileNav">
+      <a href="index.html" class="mobile-link">Home</a>
+      <a href="assignments.html" class="mobile-link">Assignments</a>
+      <a href="activities.html" class="mobile-link">Activities</a>
+      <a href="reflection.html" class="mobile-link">Reflection</a>
+      <a href="resources.html" class="mobile-link">Resources</a>
+      <a href="contact.html" class="mobile-link">Contact</a>
     </div>
   </header>
 
   <main class="container">
     <div class="page-head">
-      <div class="breadcrumb"><a href="index.html">Home</a> / <span>Activities</span></div>
       <h1 class="page-title">Activities</h1>
-      <p class="muted">Class activities, practice work, and participation.</p>
+      <p class="muted">My class activities and participation work.</p>
     </div>
 
-    <div class="list">
-      <article class="item">
-        <div class="item-top">
-          <h3>Activity 1 — Title Here</h3>
-          <span class="pill">In class</span>
-        </div>
-        <p>What you did + what you learned (short).</p>
-      </article>
-
-      <article class="item">
-        <div class="item-top">
-          <h3>Activity 2 — Title Here</h3>
-          <span class="pill">Teamwork</span>
-        </div>
-        <p>Short summary.</p>
-      </article>
-
-      <article class="item">
-        <div class="item-top">
-          <h3>Activity 3 — Title Here</h3>
-          <span class="pill">Practice</span>
-        </div>
-        <p>Short summary.</p>
-      </article>
-
-      <article class="item">
-        <div class="item-top">
-          <h3>Activity 4 — Title Here</h3>
-          <span class="pill">Workshop</span>
-        </div>
-        <p>Short summary.</p>
-      </article>
+    <div class="item">
+      <div class="item-top">
+        <h2 style="margin:0;">Activity 1</h2>
+        <span class="pill">In class</span>
+      </div>
+      <p class="muted">Short description of what you did and what you learned.</p>
     </div>
 
-    <section class="section" id="video">
-      <div class="section-head">
-        <h2>Intro Video</h2>
-        <p class="muted">Add your 1+ minute video here.</p>
+    <div class="item">
+      <div class="item-top">
+        <h2 style="margin:0;">Activity 2</h2>
+        <span class="pill">Practice</span>
       </div>
+      <p class="muted">Short description of what you did and what you learned.</p>
+    </div>
 
-      <div class="note">
-        If your video is on YouTube: click Share → Embed → copy the link inside the iframe below.
-      </div>
+    <div class="card">
+      <h2 style="margin:0 0 8px;">Intro Video</h2>
+      <p class="muted" style="margin:0;">
+        Replace the video link below with your own YouTube embed link.
+      </p>
 
-      <div class="video-wrap" style="margin-top:12px;">
-        <!-- Replace the src with your video embed link -->
+      <div class="video-wrap">
+        <!-- Replace src with your video embed URL -->
         <iframe
           src="https://www.youtube.com/embed/dQw4w9WgXcQ"
           title="Intro Video"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen>
-        </iframe>
+          allowfullscreen></iframe>
       </div>
-    </section>
+    </div>
   </main>
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p class="muted">© <span id="year"></span> Ghina Hasan • Activities</p>
+      <p class="muted">© <span id="year"></span> Ghina Hasan</p>
       <div class="footer-links">
-        <a href="../contact/">Contact</a>
-        <a href="../resources/">Resources</a>
+        <a href="index.html">Home</a>
+        <a href="resources.html">Resources</a>
       </div>
     </div>
   </footer>
