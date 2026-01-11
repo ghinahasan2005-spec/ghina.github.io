@@ -1,89 +1,423 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ghina Hasan | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <script defer src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portfolio - Home</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        nav {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 1rem 2rem;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #667eea;
+            font-weight: 600;
+            transition: all 0.3s;
+            font-size: 1rem;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+        }
+
+        nav a:hover, nav a.active {
+            background: #667eea;
+            color: white;
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* Section Styling */
+        .content-section {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 3rem;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+            animation: fadeIn 0.6s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Profile Header */
+        .profile-header {
+            text-align: center;
+            margin-bottom: 3rem;
+            position: relative;
+        }
+
+        .profile-image-container {
+            width: 150px;
+            height: 150px;
+            margin: 0 auto 1.5rem;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 5px;
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+            animation: pulse 3s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+            }
+            50% {
+                box-shadow: 0 10px 40px rgba(102, 126, 234, 0.6);
+            }
+        }
+
+        .profile-image {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+        }
+
+        h1 {
+            color: #764ba2;
+            font-size: 2.8rem;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+
+        .student-title {
+            color: #667eea;
+            font-size: 1.3rem;
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+
+        /* Info Grid - Enhanced Design */
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin: 3rem 0;
+        }
+
+        .info-item {
+            background: white;
+            padding: 1.8rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .info-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background: linear-gradient(180deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .info-item:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 35px rgba(102, 126, 234, 0.3);
+        }
+
+        .info-icon {
+            font-size: 2rem;
+            margin-bottom: 0.8rem;
+            display: inline-block;
+        }
+
+        .info-item strong {
+            color: #667eea;
+            display: block;
+            margin-bottom: 0.8rem;
+            font-size: 0.95rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            font-weight: 600;
+        }
+
+        .info-value {
+            color: #333;
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+
+        /* Quote Box - Enhanced */
+        .quote-section {
+            margin: 3rem 0;
+        }
+
+        .quote-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2.5rem;
+            border-radius: 20px;
+            font-style: italic;
+            font-size: 1.3rem;
+            text-align: center;
+            position: relative;
+            box-shadow: 0 15px 40px rgba(102, 126, 234, 0.4);
+        }
+
+        .quote-box::before {
+            content: '"';
+            font-size: 5rem;
+            position: absolute;
+            top: -10px;
+            left: 20px;
+            opacity: 0.3;
+            font-family: Georgia, serif;
+        }
+
+        .quote-text {
+            position: relative;
+            z-index: 1;
+        }
+
+        .quote-author {
+            margin-top: 1.5rem;
+            font-size: 1.1rem;
+            font-style: normal;
+            opacity: 0.95;
+            font-weight: 600;
+        }
+
+        /* CV Button - Enhanced */
+        .cv-section {
+            text-align: center;
+            margin-top: 3rem;
+        }
+
+        .cv-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 1.2rem 3rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s;
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cv-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.2);
+            transition: left 0.5s;
+        }
+
+        .cv-button:hover::before {
+            left: 100%;
+        }
+
+        .cv-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(102, 126, 234, 0.6);
+        }
+
+        .cv-icon {
+            margin-right: 0.5rem;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: white;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            nav ul {
+                gap: 1rem;
+            }
+
+            nav a {
+                font-size: 0.9rem;
+                padding: 0.4rem 0.8rem;
+            }
+
+            .content-section {
+                padding: 2rem 1.5rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .student-title {
+                font-size: 1.1rem;
+            }
+
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .quote-box {
+                font-size: 1.1rem;
+                padding: 2rem;
+            }
+
+            .profile-image-container {
+                width: 120px;
+                height: 120px;
+            }
+        }
+    </style>
 </head>
-
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="index.html">
-        <span class="brand-dot"></span>
-        <span>Ghina Hasan</span>
-      </a>
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="assignments.html">Assignments</a></li>
+            <li><a href="activities.html">Activities</a></li>
+            <li><a href="reflection.html">Reflection</a></li>
+            <li><a href="websites.html">Favorite Websites</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
 
-      <nav class="nav" aria-label="Primary">
-        <a class="nav-link active" href="index.html">Home</a>
-        <a class="nav-link" href="assignments.html">Assignments</a>
-        <a class="nav-link" href="activities.html">Activities</a>
-        <a class="nav-link" href="reflection.html">Reflection</a>
-        <a class="nav-link" href="resources.html">Resources</a>
-        <a class="nav-link" href="contact.html">Contact</a>
-      </nav>
+    <div class="container">
+        <!-- Home Section -->
+        <div class="content-section">
+            <!-- Profile Header -->
+            <div class="profile-header">
+                <div class="profile-image-container">
+                    <div class="profile-image">
+                        👤
+                    </div>
+                </div>
+                <h1>Your Name Here</h1>
+                <p class="student-title">Computer Science Student</p>
+            </div>
 
-      <div class="header-actions">
-        <button class="btn btn-ghost" id="themeBtn" type="button" aria-label="Toggle theme">🌙</button>
-        <button class="btn btn-ghost mobile-menu-btn" id="menuBtn" type="button" aria-label="Open menu">☰</button>
-      </div>
-    </div>
+            <!-- Info Grid -->
+            <div class="info-grid">
+                <div class="info-item">
+                    <div class="info-icon">🎓</div>
+                    <strong>University ID</strong>
+                    <div class="info-value">123456789</div>
+                </div>
 
-    <div class="mobile-nav" id="mobileNav" aria-label="Mobile menu">
-      <a href="index.html" class="mobile-link">Home</a>
-      <a href="assignments.html" class="mobile-link">Assignments</a>
-      <a href="activities.html" class="mobile-link">Activities</a>
-      <a href="reflection.html" class="mobile-link">Reflection</a>
-      <a href="resources.html" class="mobile-link">Resources</a>
-      <a href="contact.html" class="mobile-link">Contact</a>
-    </div>
-  </header>
+                <div class="info-item">
+                    <div class="info-icon">🏛️</div>
+                    <strong>University</strong>
+                    <div class="info-value">Your University Name</div>
+                </div>
 
-  <main class="container">
-    <section class="hero">
-      <h1>Welcome to my Portfolio</h1>
-      <p>
-        This website includes my assignments, activities, reflections, favorite resources, and contact information.
-        Everything is organized clearly for easy grading.
-      </p>
+                <div class="info-item">
+                    <div class="info-icon">🏫</div>
+                    <strong>College</strong>
+                    <div class="info-value">College of Engineering</div>
+                </div>
 
-      <div class="hero-actions">
-        <a class="btn btn-primary" href="assignments.html">View Assignments</a>
-        <a class="btn" href="activities.html">View Activities</a>
-      </div>
+                <div class="info-item">
+                    <div class="info-icon">💻</div>
+                    <strong>Major</strong>
+                    <div class="info-value">Computer Science</div>
+                </div>
 
-      <div class="card">
-        <h2 style="margin:0 0 8px;">Quick Links</h2>
-        <p class="muted" style="margin:0 0 12px;">Open each section below:</p>
+                <div class="info-item">
+                    <div class="info-icon">📚</div>
+                    <strong>Course Name</strong>
+                    <div class="info-value">Web Development</div>
+                </div>
 
-        <div class="grid">
-          <a href="assignments.html">
-            <strong>Assignments</strong>
-            <div class="muted">All course work</div>
-          </a>
-          <a href="activities.html">
-            <strong>Activities</strong>
-            <div class="muted">Class activities + video</div>
-          </a>
-          <a href="reflection.html">
-            <strong>Reflection</strong>
-            <div class="muted">Weekly reflections</div>
-          </a>
+                <div class="info-item">
+                    <div class="info-icon">👨‍🏫</div>
+                    <strong>Instructor</strong>
+                    <div class="info-value">Dr. Instructor Name</div>
+                </div>
+
+                <div class="info-item">
+                    <div class="info-icon">📅</div>
+                    <strong>Semester</strong>
+                    <div class="info-value">Spring 2024</div>
+                </div>
+
+                <div class="info-item">
+                    <div class="info-icon">🌟</div>
+                    <strong>Academic Year</strong>
+                    <div class="info-value">2023-2024</div>
+                </div>
+            </div>
+
+            <!-- Quote Section -->
+            <div class="quote-section">
+                <div class="quote-box">
+                    <div class="quote-text">
+                        The only way to do great work is to love what you do.
+                    </div>
+                    <div class="quote-author">— Steve Jobs</div>
+                </div>
+            </div>
+
+            <!-- CV Button -->
+            <div class="cv-section">
+                <a href="#" class="cv-button">
+                    <span class="cv-icon">📄</span>
+                    Download My CV
+                </a>
+            </div>
         </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p class="muted">© <span id="year"></span> Ghina Hasan</p>
-      <div class="footer-links">
-        <a href="resources.html">Resources</a>
-        <a href="contact.html">Contact</a>
-      </div>
     </div>
-  </footer>
+
+    <footer>
+        <p>&copy; 2024 Your Name. All rights reserved. | Built with passion for learning</p>
+    </footer>
 </body>
 </html>
