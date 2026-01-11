@@ -23,6 +23,7 @@
             background: rgba(255, 255, 255, 0.95);
             padding: 1rem 2rem;
             box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
         }
 
         nav ul {
@@ -82,7 +83,7 @@
         }
 
         h2 {
-            color: #333;
+            color: #667eea;
             font-size: 1.8rem;
             margin-top: 2rem;
             margin-bottom: 1rem;
@@ -107,23 +108,45 @@
             margin-bottom: 1.5rem;
         }
 
-        .contact-details p {
-            margin-bottom: 1rem;
-            font-size: 1.1rem;
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+            padding: 1rem;
+            background: white;
+            border-radius: 8px;
+            transition: transform 0.3s;
         }
 
-        .contact-details strong {
-            color: #333;
-            font-weight: 600;
+        .contact-item:hover {
+            transform: translateX(5px);
         }
 
-        .contact-details a {
+        .contact-icon {
+            font-size: 1.8rem;
+            margin-right: 1rem;
+            min-width: 40px;
+        }
+
+        .contact-info strong {
+            display: block;
             color: #667eea;
-            text-decoration: none;
             font-weight: 600;
+            margin-bottom: 0.3rem;
+            font-size: 0.9rem;
+            text-transform: uppercase;
         }
 
-        .contact-details a:hover {
+        .contact-info a,
+        .contact-info span {
+            color: #333;
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+
+        .contact-info a:hover {
+            color: #667eea;
             text-decoration: underline;
         }
 
@@ -173,8 +196,22 @@
             
             <div class="contact-details">
                 <h3>Info</h3>
-                <p><strong>Email:</strong> <a href="mailto:your-email@example.com">your-email@example.com</a></p>
-                <p><strong>Phone:</strong> +123 456 789 0123</p>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">📧</div>
+                    <div class="contact-info">
+                        <strong>Email</strong>
+                        <a href="mailto:your-email@example.com">your-email@example.com</a>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">📱</div>
+                    <div class="contact-info">
+                        <strong>Phone</strong>
+                        <span>+123 456 789 0123</span>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
