@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact | Ghina Hasan</title>
-  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="style.css" />
   <script defer src="script.js"></script>
 </head>
 
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="../index.html"><span class="brand-dot"></span><span class="brand-text">Ghina Hasan</span></a>
+      <a class="brand" href="index.html"><span class="brand-dot"></span><span>Ghina Hasan</span></a>
+
       <nav class="nav" aria-label="Primary">
         <a class="nav-link" href="index.html">Home</a>
         <a class="nav-link" href="assignments.html">Assignments</a>
@@ -20,73 +21,64 @@
         <a class="nav-link" href="resources.html">Resources</a>
         <a class="nav-link active" href="contact.html">Contact</a>
       </nav>
+
       <div class="header-actions">
-        <button class="btn btn-ghost" id="themeBtn" type="button" aria-label="Toggle theme">🌙</button>
-        <button class="btn btn-ghost mobile-menu-btn" id="menuBtn" type="button" aria-label="Open menu">☰</button>
+        <button class="btn btn-ghost" id="themeBtn" type="button">🌙</button>
+        <button class="btn btn-ghost mobile-menu-btn" id="menuBtn" type="button">☰</button>
       </div>
     </div>
-    <div class="mobile-nav" id="mobileNav" aria-label="Mobile menu">
-      <a href="../index.html" class="mobile-link">Home</a>
-      <a href="../assignments/" class="mobile-link">Assignments</a>
-      <a href="../activities/" class="mobile-link">Activities</a>
-      <a href="../reflection/" class="mobile-link">Reflection</a>
-      <a href="../resources/" class="mobile-link">Resources</a>
-      <a href="./" class="mobile-link">Contact</a>
+
+    <div class="mobile-nav" id="mobileNav">
+      <a href="index.html" class="mobile-link">Home</a>
+      <a href="assignments.html" class="mobile-link">Assignments</a>
+      <a href="activities.html" class="mobile-link">Activities</a>
+      <a href="reflection.html" class="mobile-link">Reflection</a>
+      <a href="resources.html" class="mobile-link">Resources</a>
+      <a href="contact.html" class="mobile-link">Contact</a>
     </div>
   </header>
 
   <main class="container">
     <div class="page-head">
-      <div class="breadcrumb"><a href="../index.html">Home</a> / <span>Contact</span></div>
       <h1 class="page-title">Contact</h1>
       <p class="muted">You can reach me using the details below.</p>
     </div>
 
     <div class="item">
       <div class="item-top">
-        <h3>Contact Details</h3>
+        <h2 style="margin:0;">Contact Details</h2>
         <span class="pill">Info</span>
       </div>
       <p class="muted" style="margin-top:10px;">
-        Email: <strong>your-email@example.com</strong><br/>
-        GitHub: <strong>https://github.com/your-username</strong><br/>
-        CV: <a href="../Ghina%20Hasan%20CV.pdf" target="_blank" rel="noopener" style="text-decoration:underline; text-underline-offset:3px;">Open PDF</a>
+        Email: <strong>your-email@example.com</strong><br />
+        GitHub: <strong>https://github.com/your-username</strong><br />
+        CV: <a href="Ghina%20Hasan%20CV.pdf" target="_blank" rel="noopener" style="text-decoration:underline;">Open PDF</a>
       </p>
     </div>
 
-    <section class="section">
-      <div class="section-head">
-        <h2>Message (Optional)</h2>
-        <p class="muted">This form does not send automatically (GitHub Pages is static), but it looks professional.</p>
-      </div>
+    <div class="card">
+      <h2 style="margin:0 0 8px;">Message (Optional)</h2>
+      <p class="muted" style="margin:0;">
+        This form is a demo (GitHub Pages is static). If you want it to send messages, you can connect Formspree later.
+      </p>
 
-      <form class="form" onsubmit="event.preventDefault(); alert('This is a demo form. Add Formspree to make it send messages.');">
-        <div class="field">
-          <label for="name">Name</label>
-          <input id="name" type="text" placeholder="Your name" required>
+      <form style="margin-top:12px;" onsubmit="event.preventDefault(); alert('Demo form. Add Formspree to receive messages.');">
+        <div style="display:grid; gap:10px;">
+          <input type="text" placeholder="Your name" required style="padding:12px;border-radius:12px;border:1px solid rgba(255,255,255,.12);background:transparent;color:inherit;">
+          <input type="email" placeholder="Your email" required style="padding:12px;border-radius:12px;border:1px solid rgba(255,255,255,.12);background:transparent;color:inherit;">
+          <textarea placeholder="Your message" style="padding:12px;border-radius:12px;border:1px solid rgba(255,255,255,.12);background:transparent;color:inherit;min-height:120px;"></textarea>
+          <button class="btn btn-primary" type="submit">Send</button>
         </div>
-
-        <div class="field">
-          <label for="email">Email</label>
-          <input id="email" type="email" placeholder="your@email.com" required>
-        </div>
-
-        <div class="field">
-          <label for="msg">Message</label>
-          <textarea id="msg" placeholder="Write your message..."></textarea>
-        </div>
-
-        <button class="btn btn-primary" type="submit">Send Message</button>
       </form>
-    </section>
+    </div>
   </main>
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p class="muted">© <span id="year"></span> Ghina Hasan • Contact</p>
+      <p class="muted">© <span id="year"></span> Ghina Hasan</p>
       <div class="footer-links">
-        <a href="../resources/">Resources</a>
-        <a href="../index.html">Home</a>
+        <a href="resources.html">Resources</a>
+        <a href="index.html">Home</a>
       </div>
     </div>
   </footer>
