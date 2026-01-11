@@ -1,91 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Assignments | Ghina Hasan</title>
-  <link rel="stylesheet" href="style.css" />
-  <script defer src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignments - Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        nav {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 1rem 2rem;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #667eea;
+            font-weight: 600;
+            transition: all 0.3s;
+            font-size: 1rem;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+        }
+
+        nav a:hover, nav a.active {
+            background: #667eea;
+            color: white;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .content-section {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 3rem;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+            animation: fadeIn 0.6s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h1 {
+            color: #764ba2;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .assignment-card {
+            background: #f8f9ff;
+            padding: 1.5rem;
+            border-radius: 12px;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid #667eea;
+            transition: transform 0.3s;
+        }
+
+        .assignment-card:hover {
+            transform: translateX(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .assignment-card h3 {
+            color: #764ba2;
+            margin-bottom: 0.8rem;
+        }
+
+        .file-link {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 0.5rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            margin-top: 0.8rem;
+            transition: background 0.3s;
+        }
+
+        .file-link:hover {
+            background: #764ba2;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: white;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                gap: 1rem;
+            }
+            nav a {
+                font-size: 0.9rem;
+                padding: 0.4rem 0.8rem;
+            }
+            .content-section {
+                padding: 2rem 1.5rem;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
 </head>
-
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="index.html"><span class="brand-dot"></span><span>Ghina Hasan</span></a>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="assignments.html" class="active">Assignments</a></li>
+            <li><a href="activities.html">Activities</a></li>
+            <li><a href="reflection.html">Reflection</a></li>
+            <li><a href="websites.html">Favorite Websites</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
 
-      <nav class="nav" aria-label="Primary">
-        <a class="nav-link" href="index.html">Home</a>
-        <a class="nav-link active" href="assignments.html">Assignments</a>
-        <a class="nav-link" href="activities.html">Activities</a>
-        <a class="nav-link" href="reflection.html">Reflection</a>
-        <a class="nav-link" href="resources.html">Resources</a>
-        <a class="nav-link" href="contact.html">Contact</a>
-      </nav>
+    <div class="container">
+        <div class="content-section">
+            <h1>Assignments</h1>
+            
+            <div class="assignment-card">
+                <h3>Assignment 1: Introduction to HTML</h3>
+                <p>Description of the assignment goes here. Brief overview of what was required and accomplished.</p>
+                <a href="#" class="file-link">View Files</a>
+            </div>
 
-      <div class="header-actions">
-        <button class="btn btn-ghost" id="themeBtn" type="button">🌙</button>
-        <button class="btn btn-ghost mobile-menu-btn" id="menuBtn" type="button">☰</button>
-      </div>
+            <div class="assignment-card">
+                <h3>Assignment 2: CSS Styling</h3>
+                <p>Description of the assignment goes here. Brief overview of what was required and accomplished.</p>
+                <a href="#" class="file-link">View Files</a>
+            </div>
+
+            <div class="assignment-card">
+                <h3>Assignment 3: JavaScript Basics</h3>
+                <p>Description of the assignment goes here. Brief overview of what was required and accomplished.</p>
+                <a href="#" class="file-link">View Files</a>
+            </div>
+
+            <div class="assignment-card">
+                <h3>Assignment 4: Responsive Design</h3>
+                <p>Description of the assignment goes here. Brief overview of what was required and accomplished.</p>
+                <a href="#" class="file-link">View Files</a>
+            </div>
+        </div>
     </div>
 
-    <div class="mobile-nav" id="mobileNav">
-      <a href="index.html" class="mobile-link">Home</a>
-      <a href="assignments.html" class="mobile-link">Assignments</a>
-      <a href="activities.html" class="mobile-link">Activities</a>
-      <a href="reflection.html" class="mobile-link">Reflection</a>
-      <a href="resources.html" class="mobile-link">Resources</a>
-      <a href="contact.html" class="mobile-link">Contact</a>
-    </div>
-  </header>
-
-  <main class="container">
-    <div class="page-head">
-      <h1 class="page-title">Assignments</h1>
-      <p class="muted">All my course assignments are listed here with short descriptions.</p>
-    </div>
-
-    <!-- Edit these titles/descriptions -->
-    <div class="item">
-      <div class="item-top">
-        <h2 style="margin:0;">Assignment 1</h2>
-        <span class="pill">Week 1</span>
-      </div>
-      <p class="muted">Write a short summary about what you did and what you learned.</p>
-    </div>
-
-    <div class="item">
-      <div class="item-top">
-        <h2 style="margin:0;">Assignment 2</h2>
-        <span class="pill">Week 2</span>
-      </div>
-      <p class="muted">Write a short summary about what you did and what you learned.</p>
-    </div>
-
-    <div class="item">
-      <div class="item-top">
-        <h2 style="margin:0;">Assignment 3</h2>
-        <span class="pill">Week 3</span>
-      </div>
-      <p class="muted">Write a short summary about what you did and what you learned.</p>
-    </div>
-
-    <div class="item">
-      <div class="item-top">
-        <h2 style="margin:0;">Assignment 4</h2>
-        <span class="pill">Week 4</span>
-      </div>
-      <p class="muted">Write a short summary about what you did and what you learned.</p>
-    </div>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p class="muted">© <span id="year"></span> Ghina Hasan</p>
-      <div class="footer-links">
-        <a href="index.html">Home</a>
-        <a href="contact.html">Contact</a>
-      </div>
-    </div>
-  </footer>
+    <footer>
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
+    </footer>
 </body>
 </html>
