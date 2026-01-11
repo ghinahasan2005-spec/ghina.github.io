@@ -1,80 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Resources | Ghina Hasan</title>
-  <link rel="stylesheet" href="../style/style.css"/>
-  <script defer src="../script/main.js"></script>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
 </head>
 
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="../index.html"><span class="brand-dot"></span><span class="brand-text">Ghina Hasan</span></a>
+      <a class="brand" href="index.html"><span class="brand-dot"></span><span>Ghina Hasan</span></a>
+
       <nav class="nav" aria-label="Primary">
-        <a class="nav-link" href="../index.html">Home</a>
-        <a class="nav-link" href="../assignments/">Assignments</a>
-        <a class="nav-link" href="../activities/">Activities</a>
-        <a class="nav-link" href="../reflection/">Reflection</a>
-        <a class="nav-link active" href="./">Resources</a>
-        <a class="nav-link" href="../contact/">Contact</a>
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="assignments.html">Assignments</a>
+        <a class="nav-link" href="activities.html">Activities</a>
+        <a class="nav-link" href="reflection.html">Reflection</a>
+        <a class="nav-link active" href="resources.html">Resources</a>
+        <a class="nav-link" href="contact.html">Contact</a>
       </nav>
+
       <div class="header-actions">
-        <button class="btn btn-ghost" id="themeBtn" type="button" aria-label="Toggle theme">🌙</button>
-        <button class="btn btn-ghost mobile-menu-btn" id="menuBtn" type="button" aria-label="Open menu">☰</button>
+        <button class="btn btn-ghost" id="themeBtn" type="button">🌙</button>
+        <button class="btn btn-ghost mobile-menu-btn" id="menuBtn" type="button">☰</button>
       </div>
     </div>
-    <div class="mobile-nav" id="mobileNav" aria-label="Mobile menu">
-      <a href="../index.html" class="mobile-link">Home</a>
-      <a href="../assignments/" class="mobile-link">Assignments</a>
-      <a href="../activities/" class="mobile-link">Activities</a>
-      <a href="../reflection/" class="mobile-link">Reflection</a>
-      <a href="./" class="mobile-link">Resources</a>
-      <a href="../contact/" class="mobile-link">Contact</a>
+
+    <div class="mobile-nav" id="mobileNav">
+      <a href="index.html" class="mobile-link">Home</a>
+      <a href="assignments.html" class="mobile-link">Assignments</a>
+      <a href="activities.html" class="mobile-link">Activities</a>
+      <a href="reflection.html" class="mobile-link">Reflection</a>
+      <a href="resources.html" class="mobile-link">Resources</a>
+      <a href="contact.html" class="mobile-link">Contact</a>
     </div>
   </header>
 
   <main class="container">
     <div class="page-head">
-      <div class="breadcrumb"><a href="../index.html">Home</a> / <span>Resources</span></div>
-      <h1 class="page-title">Favorite Websites & Resources</h1>
-      <p class="muted">Websites that help me learn, build, and improve.</p>
+      <h1 class="page-title">Resources</h1>
+      <p class="muted">My favorite websites that help me learn and build projects.</p>
     </div>
 
-    <div class="grid-3">
-      <a class="card" href="https://developer.mozilla.org/" target="_blank" rel="noopener">
-        <h3>MDN Web Docs</h3>
-        <p class="muted">Best reference for HTML, CSS, and JavaScript.</p>
-        <span class="card-link">Visit →</span>
+    <div class="grid">
+      <a href="https://developer.mozilla.org/" target="_blank" rel="noopener">
+        <strong>MDN Web Docs</strong>
+        <div class="muted">HTML/CSS/JS reference</div>
       </a>
 
-      <a class="card" href="https://www.w3schools.com/" target="_blank" rel="noopener">
-        <h3>W3Schools</h3>
-        <p class="muted">Quick examples and practice for web basics.</p>
-        <span class="card-link">Visit →</span>
+      <a href="https://www.w3schools.com/" target="_blank" rel="noopener">
+        <strong>W3Schools</strong>
+        <div class="muted">Quick web tutorials</div>
       </a>
 
-      <a class="card" href="https://github.com/" target="_blank" rel="noopener">
-        <h3>GitHub</h3>
-        <p class="muted">Code hosting, projects, and version control.</p>
-        <span class="card-link">Visit →</span>
+      <a href="https://github.com/" target="_blank" rel="noopener">
+        <strong>GitHub</strong>
+        <div class="muted">Projects and code hosting</div>
       </a>
-    </div>
-
-    <div class="section">
-      <div class="note">
-        Add your own favorites here (e.g., Canva, Figma, Stack Overflow, YouTube channels, etc.).
-      </div>
     </div>
   </main>
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p class="muted">© <span id="year"></span> Ghina Hasan • Resources</p>
+      <p class="muted">© <span id="year"></span> Ghina Hasan</p>
       <div class="footer-links">
-        <a href="../contact/">Contact</a>
-        <a href="../assignments/">Assignments</a>
+        <a href="index.html">Home</a>
+        <a href="contact.html">Contact</a>
       </div>
     </div>
   </footer>
