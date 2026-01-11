@@ -2,20 +2,18 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ghina Hasan | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
   <script defer src="script.js"></script>
 </head>
 
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
-
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="index.html">
         <span class="brand-dot"></span>
-        <span class="brand-text">Ghina Hasan</span>
+        <span>Ghina Hasan</span>
       </a>
 
       <nav class="nav" aria-label="Primary">
@@ -25,157 +23,54 @@
         <a class="nav-link" href="reflection.html">Reflection</a>
         <a class="nav-link" href="resources.html">Resources</a>
         <a class="nav-link" href="contact.html">Contact</a>
-
       </nav>
 
       <div class="header-actions">
-        <button class="btn btn-ghost" id="themeBtn" type="button" aria-label="Toggle theme">
-          🌙
-        </button>
-        <button class="btn btn-ghost mobile-menu-btn" id="menuBtn" type="button" aria-label="Open menu">
-          ☰
-        </button>
+        <button class="btn btn-ghost" id="themeBtn" type="button" aria-label="Toggle theme">🌙</button>
+        <button class="btn btn-ghost mobile-menu-btn" id="menuBtn" type="button" aria-label="Open menu">☰</button>
       </div>
     </div>
 
     <div class="mobile-nav" id="mobileNav" aria-label="Mobile menu">
       <a href="index.html" class="mobile-link">Home</a>
-      <a href="assignments/" class="mobile-link">Assignments</a>
-      <a href="activities/" class="mobile-link">Activities</a>
-      <a href="reflection/" class="mobile-link">Reflection</a>
-      <a href="resources/" class="mobile-link">Resources</a>
-      <a href="contact/" class="mobile-link">Contact</a>
+      <a href="assignments.html" class="mobile-link">Assignments</a>
+      <a href="activities.html" class="mobile-link">Activities</a>
+      <a href="reflection.html" class="mobile-link">Reflection</a>
+      <a href="resources.html" class="mobile-link">Resources</a>
+      <a href="contact.html" class="mobile-link">Contact</a>
     </div>
   </header>
 
-  <main id="main">
+  <main class="container">
     <section class="hero">
-      <div class="container hero-grid">
-        <div class="hero-left">
-          <p class="badge">Student Portfolio</p>
-          <h1 class="hero-title">
-            Building clear, modern projects — with style, structure, and purpose.
-          </h1>
-          <p class="hero-subtitle">
-            Welcome to my portfolio. Here you’ll find my course assignments, class activities, reflections, and favorite learning resources.
-          </p>
+      <h1>Welcome to my Portfolio</h1>
+      <p>
+        This website includes my assignments, activities, reflections, favorite resources, and contact information.
+        Everything is organized clearly for easy grading.
+      </p>
 
-          <div class="hero-cta">
-            <a class="btn btn-primary" href="assignments/">View Assignments</a>
-            <a class="btn btn-soft" href="contact/">Contact Me</a>
-          </div>
-
-          <div class="hero-mini">
-            <div class="mini-card">
-              <div class="mini-title">Focus</div>
-              <div class="mini-text">Web Development • Projects • Learning</div>
-            </div>
-            <div class="mini-card">
-              <div class="mini-title">Resume</div>
-              <a class="mini-link" href="Ghina%20Hasan%20CV.pdf" target="_blank" rel="noopener">Open CV (PDF)</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="hero-right">
-          <div class="glass-card">
-            <div class="glass-top">
-              <div class="avatar" aria-hidden="true">GH</div>
-              <div>
-                <div class="card-title">Ghina Hasan</div>
-                <div class="card-sub">Portfolio Website</div>
-              </div>
-            </div>
-
-            <div class="divider"></div>
-
-            <div class="stats">
-              <div class="stat">
-                <div class="stat-num" id="statAssignments">6+</div>
-                <div class="stat-label">Assignments</div>
-              </div>
-              <div class="stat">
-                <div class="stat-num" id="statActivities">6+</div>
-                <div class="stat-label">Activities</div>
-              </div>
-              <div class="stat">
-                <div class="stat-num" id="statReflections">6+</div>
-                <div class="stat-label">Reflections</div>
-              </div>
-            </div>
-
-            <div class="divider"></div>
-
-            <p class="muted">
-              Tip: Use the navigation to explore each section. The design is simple, consistent, and easy to grade.
-            </p>
-
-            <a class="btn btn-primary w-full" href="activities/#video">Watch Intro Video</a>
-          </div>
-        </div>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="assignments.html">View Assignments</a>
+        <a class="btn" href="activities.html">View Activities</a>
       </div>
-    </section>
 
-    <section class="section">
-      <div class="container">
-        <div class="section-head">
-          <h2>Quick Sections</h2>
-          <p class="muted">Everything is organized as separate pages for easy grading.</p>
-        </div>
+      <div class="card">
+        <h2 style="margin:0 0 8px;">Quick Links</h2>
+        <p class="muted" style="margin:0 0 12px;">Open each section below:</p>
 
-        <div class="grid-3">
-          <a class="card" href="assignments/">
-            <h3>Assignments</h3>
-            <p class="muted">All course assignments with short descriptions.</p>
-            <span class="card-link">Open →</span>
+        <div class="grid">
+          <a href="assignments.html">
+            <strong>Assignments</strong>
+            <div class="muted">All course work</div>
           </a>
-
-          <a class="card" href="activities/">
-            <h3>Activities</h3>
-            <p class="muted">Class activities + intro video section.</p>
-            <span class="card-link">Open →</span>
+          <a href="activities.html">
+            <strong>Activities</strong>
+            <div class="muted">Class activities + video</div>
           </a>
-
-          <a class="card" href="reflection/">
-            <h3>Reflection</h3>
-            <p class="muted">Weekly learning reflections (organized clearly).</p>
-            <span class="card-link">Open →</span>
+          <a href="reflection.html">
+            <strong>Reflection</strong>
+            <div class="muted">Weekly reflections</div>
           </a>
-        </div>
-      </div>
-    </section>
-
-    <section class="section alt">
-      <div class="container">
-        <div class="section-head">
-          <h2>Portfolio Highlights</h2>
-          <p class="muted">A clean, modern layout with readable typography and responsive design.</p>
-        </div>
-
-        <div class="timeline">
-          <div class="t-item">
-            <div class="t-dot"></div>
-            <div class="t-content">
-              <h3>Easy navigation</h3>
-              <p class="muted">All pages share the same header/footer for consistency.</p>
-            </div>
-          </div>
-
-          <div class="t-item">
-            <div class="t-dot"></div>
-            <div class="t-content">
-              <h3>Accessible design</h3>
-              <p class="muted">Readable spacing, good contrast, mobile menu, and skip link.</p>
-            </div>
-          </div>
-
-          <div class="t-item">
-            <div class="t-dot"></div>
-            <div class="t-content">
-              <h3>Light/Dark mode</h3>
-              <p class="muted">One click theme toggle — looks great in screenshots.</p>
-            </div>
-          </div>
         </div>
       </div>
     </section>
@@ -183,11 +78,10 @@
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p class="muted">© <span id="year"></span> Ghina Hasan • Portfolio</p>
+      <p class="muted">© <span id="year"></span> Ghina Hasan</p>
       <div class="footer-links">
-        <a href="contact/">Contact</a>
-        <a href="resources/">Resources</a>
-        <a href="Ghina%20Hasan%20CV.pdf" target="_blank" rel="noopener">CV</a>
+        <a href="resources.html">Resources</a>
+        <a href="contact.html">Contact</a>
       </div>
     </div>
   </footer>
