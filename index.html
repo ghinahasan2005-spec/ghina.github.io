@@ -1,146 +1,194 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ملف الإنجاز - اسم الطالب</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ghina Hasan | Portfolio</title>
+  <link rel="stylesheet" href="style/style.css" />
+  <script defer src="script/main.js"></script>
 </head>
+
 <body>
-    <!-- Navigation Menu -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="nav-brand">ملف الإنجاز</div>
-            <ul class="nav-menu">
-                <li><a href="index.html" class="active">الرئيسية</a></li>
-                <li><a href="assignments.html">الواجبات</a></li>
-                <li><a href="activities.html">الأنشطة</a></li>
-                <li><a href="reflection.html">التأمل</a></li>
-                <li><a href="resources.html">المصادر</a></li>
-                <li><a href="contact.html">التواصل</a></li>
-            </ul>
-            <div class="menu-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </nav>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-    <!-- Hero Section -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-dot"></span>
+        <span class="brand-text">Ghina Hasan</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <a class="nav-link active" href="index.html">Home</a>
+        <a class="nav-link" href="assignments/">Assignments</a>
+        <a class="nav-link" href="activities/">Activities</a>
+        <a class="nav-link" href="reflection/">Reflection</a>
+        <a class="nav-link" href="resources/">Resources</a>
+        <a class="nav-link" href="contact/">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="btn btn-ghost" id="themeBtn" type="button" aria-label="Toggle theme">
+          🌙
+        </button>
+        <button class="btn btn-ghost mobile-menu-btn" id="menuBtn" type="button" aria-label="Open menu">
+          ☰
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-nav" id="mobileNav" aria-label="Mobile menu">
+      <a href="index.html" class="mobile-link">Home</a>
+      <a href="assignments/" class="mobile-link">Assignments</a>
+      <a href="activities/" class="mobile-link">Activities</a>
+      <a href="reflection/" class="mobile-link">Reflection</a>
+      <a href="resources/" class="mobile-link">Resources</a>
+      <a href="contact/" class="mobile-link">Contact</a>
+    </div>
+  </header>
+
+  <main id="main">
     <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <div class="profile-image">
-                    <img src="images/profile.jpg" alt="صورة الطالب">
-                </div>
-                <h1>اسم الطالب الكامل</h1>
-                <p class="student-id">الرقم الجامعي: 123456789</p>
-                <div class="student-info">
-                    <p><strong>الجامعة:</strong> الجامعة الهاشمية</p>
-                    <p><strong>الكلية:</strong> كلية تكنولوجيا المعلومات</p>
-                    <p><strong>التخصص:</strong> علم الحاسوب</p>
-                    <p><strong>المقرر:</strong> اسم المقرر</p>
-                    <p><strong>المدرس:</strong> د. اسم المدرس</p>
-                    <p><strong>الفصل الدراسي:</strong> الأول 2025/2026</p>
-                </div>
-                
-                <div class="quote-section">
-                    <blockquote>
-                        <p>"العلم نور والجهل ظلام"</p>
-                        <cite>- مثل عربي</cite>
-                    </blockquote>
-                </div>
+      <div class="container hero-grid">
+        <div class="hero-left">
+          <p class="badge">Student Portfolio</p>
+          <h1 class="hero-title">
+            Building clear, modern projects — with style, structure, and purpose.
+          </h1>
+          <p class="hero-subtitle">
+            Welcome to my portfolio. Here you’ll find my course assignments, class activities, reflections, and favorite learning resources.
+          </p>
 
-                <div class="cta-buttons">
-                    <a href="cv.pdf" class="btn btn-primary" target="_blank">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-                            <polyline points="14 2 14 8 20 8"></polyline>
-                            <line x1="16" y1="13" x2="8" y2="13"></line>
-                            <line x1="16" y1="17" x2="8" y2="17"></line>
-                            <polyline points="10 9 9 9 8 9"></polyline>
-                        </svg>
-                        السيرة الذاتية
-                    </a>
-                    <a href="contact.html" class="btn btn-secondary">تواصل معي</a>
-                </div>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="assignments/">View Assignments</a>
+            <a class="btn btn-soft" href="contact/">Contact Me</a>
+          </div>
+
+          <div class="hero-mini">
+            <div class="mini-card">
+              <div class="mini-title">Focus</div>
+              <div class="mini-text">Web Development • Projects • Learning</div>
             </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section class="about-section">
-        <div class="container">
-            <h2>نبذة عني</h2>
-            <p>طالب متحمس ومجتهد في مجال تكنولوجيا المعلومات، أسعى لتطوير مهاراتي الأكاديمية والعملية. لدي شغف كبير بالبرمجة وحل المشكلات التقنية، وأطمح لأن أكون مساهماً فعّالاً في المجتمع التقني.</p>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section class="skills-section">
-        <div class="container">
-            <h2>المهارات</h2>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <h3>المهارات التقنية</h3>
-                    <ul>
-                        <li>لغات البرمجة: Python, Java, C++</li>
-                        <li>تطوير الويب: HTML, CSS, JavaScript</li>
-                        <li>قواعد البيانات: MySQL, MongoDB</li>
-                        <li>أدوات: Git, VS Code, Adobe Suite</li>
-                    </ul>
-                </div>
-                <div class="skill-card">
-                    <h3>المهارات الشخصية</h3>
-                    <ul>
-                        <li>العمل الجماعي والتعاون</li>
-                        <li>التواصل الفعّال</li>
-                        <li>القيادة وإدارة الوقت</li>
-                        <li>حل المشكلات والتفكير النقدي</li>
-                    </ul>
-                </div>
+            <div class="mini-card">
+              <div class="mini-title">Resume</div>
+              <a class="mini-link" href="Ghina%20Hasan%20CV.pdf" target="_blank" rel="noopener">Open CV (PDF)</a>
             </div>
+          </div>
         </div>
-    </section>
 
-    <!-- Quick Links -->
-    <section class="quick-links">
-        <div class="container">
-            <h2>الأقسام الرئيسية</h2>
-            <div class="links-grid">
-                <a href="assignments.html" class="link-card">
-                    <div class="icon">📚</div>
-                    <h3>الواجبات</h3>
-                    <p>جميع الواجبات والمشاريع الدراسية</p>
-                </a>
-                <a href="activities.html" class="link-card">
-                    <div class="icon">🎯</div>
-                    <h3>الأنشطة</h3>
-                    <p>الأنشطة اللامنهجية والعمل التطوعي</p>
-                </a>
-                <a href="reflection.html" class="link-card">
-                    <div class="icon">💭</div>
-                    <h3>التأمل</h3>
-                    <p>تأملاتي حول المحاضرات والدروس</p>
-                </a>
-                <a href="resources.html" class="link-card">
-                    <div class="icon">🔗</div>
-                    <h3>المصادر</h3>
-                    <p>المواقع والمصادر المفيدة</p>
-                </a>
+        <div class="hero-right">
+          <div class="glass-card">
+            <div class="glass-top">
+              <div class="avatar" aria-hidden="true">GH</div>
+              <div>
+                <div class="card-title">Ghina Hasan</div>
+                <div class="card-sub">Portfolio Website</div>
+              </div>
             </div>
+
+            <div class="divider"></div>
+
+            <div class="stats">
+              <div class="stat">
+                <div class="stat-num" id="statAssignments">6+</div>
+                <div class="stat-label">Assignments</div>
+              </div>
+              <div class="stat">
+                <div class="stat-num" id="statActivities">6+</div>
+                <div class="stat-label">Activities</div>
+              </div>
+              <div class="stat">
+                <div class="stat-num" id="statReflections">6+</div>
+                <div class="stat-label">Reflections</div>
+              </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <p class="muted">
+              Tip: Use the navigation to explore each section. The design is simple, consistent, and easy to grade.
+            </p>
+
+            <a class="btn btn-primary w-full" href="activities/#video">Watch Intro Video</a>
+          </div>
         </div>
+      </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2026 ملف الإنجاز - اسم الطالب. جميع الحقوق محفوظة.</p>
-            <p>تم الإنشاء كمتطلب لمقرر [اسم المقرر]</p>
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Quick Sections</h2>
+          <p class="muted">Everything is organized as separate pages for easy grading.</p>
         </div>
-    </footer>
 
-    <script src="script.js"></script>
+        <div class="grid-3">
+          <a class="card" href="assignments/">
+            <h3>Assignments</h3>
+            <p class="muted">All course assignments with short descriptions.</p>
+            <span class="card-link">Open →</span>
+          </a>
+
+          <a class="card" href="activities/">
+            <h3>Activities</h3>
+            <p class="muted">Class activities + intro video section.</p>
+            <span class="card-link">Open →</span>
+          </a>
+
+          <a class="card" href="reflection/">
+            <h3>Reflection</h3>
+            <p class="muted">Weekly learning reflections (organized clearly).</p>
+            <span class="card-link">Open →</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt">
+      <div class="container">
+        <div class="section-head">
+          <h2>Portfolio Highlights</h2>
+          <p class="muted">A clean, modern layout with readable typography and responsive design.</p>
+        </div>
+
+        <div class="timeline">
+          <div class="t-item">
+            <div class="t-dot"></div>
+            <div class="t-content">
+              <h3>Easy navigation</h3>
+              <p class="muted">All pages share the same header/footer for consistency.</p>
+            </div>
+          </div>
+
+          <div class="t-item">
+            <div class="t-dot"></div>
+            <div class="t-content">
+              <h3>Accessible design</h3>
+              <p class="muted">Readable spacing, good contrast, mobile menu, and skip link.</p>
+            </div>
+          </div>
+
+          <div class="t-item">
+            <div class="t-dot"></div>
+            <div class="t-content">
+              <h3>Light/Dark mode</h3>
+              <p class="muted">One click theme toggle — looks great in screenshots.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="muted">© <span id="year"></span> Ghina Hasan • Portfolio</p>
+      <div class="footer-links">
+        <a href="contact/">Contact</a>
+        <a href="resources/">Resources</a>
+        <a href="Ghina%20Hasan%20CV.pdf" target="_blank" rel="noopener">CV</a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
