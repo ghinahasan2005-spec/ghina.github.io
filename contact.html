@@ -16,7 +16,7 @@
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             min-height: 100vh;
             color: #333;
-            line-height: 1.6;
+            line-height: 1.8;
         }
 
         nav {
@@ -51,7 +51,7 @@
         }
 
         .container {
-            max-width: 1200px;
+            max-width: 900px;
             margin: 0 auto;
             padding: 40px 20px;
         }
@@ -78,62 +78,119 @@
         h1 {
             color: #764ba2;
             font-size: 2.5rem;
-            margin-bottom: 2rem;
-            text-align: center;
+            margin-bottom: 1.5rem;
         }
 
-        .contact-intro {
-            text-align: center;
-            margin-bottom: 3rem;
+        h2 {
+            color: #333;
+            font-size: 1.8rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .intro-text {
             font-size: 1.1rem;
             color: #555;
+            margin-bottom: 2rem;
         }
 
-        .contact-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2rem;
-            margin-top: 2rem;
-        }
-
-        .contact-item {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
+        .contact-details {
+            background: #f8f9ff;
             padding: 2rem;
             border-radius: 12px;
-            text-align: center;
-            transition: transform 0.3s, box-shadow 0.3s;
+            border-left: 4px solid #667eea;
+            margin-bottom: 2rem;
         }
 
-        .contact-item:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-        }
-
-        .contact-item h3 {
+        .contact-details h3 {
+            color: #667eea;
+            font-size: 1.2rem;
             margin-bottom: 1rem;
-            font-size: 1.3rem;
         }
 
-        .contact-item p {
+        .contact-details p {
+            margin-bottom: 0.8rem;
             font-size: 1rem;
-            margin-top: 0.5rem;
         }
 
-        .contact-item a {
-            color: white;
+        .contact-details strong {
+            color: #333;
+            font-weight: 600;
+        }
+
+        .contact-details a {
+            color: #667eea;
             text-decoration: none;
             font-weight: 600;
-            word-break: break-all;
         }
 
-        .contact-item a:hover {
+        .contact-details a:hover {
             text-decoration: underline;
         }
 
-        .icon {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
+        .message-form {
+            margin-top: 2rem;
+        }
+
+        .form-note {
+            background: #fff3cd;
+            border: 1px solid #ffc107;
+            color: #856404;
+            padding: 1rem;
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+            font-size: 0.95rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #333;
+            font-weight: 600;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.8rem;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-family: inherit;
+            transition: border-color 0.3s;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .form-group textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+
+        .send-button {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 1rem 2.5rem;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+        }
+
+        .send-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.5);
         }
 
         footer {
@@ -157,9 +214,6 @@
             h1 {
                 font-size: 2rem;
             }
-            .contact-grid {
-                grid-template-columns: 1fr;
-            }
         }
     </style>
 </head>
@@ -177,55 +231,46 @@
 
     <div class="container">
         <div class="content-section">
-            <h1>Contact Information</h1>
+            <h1>Contact</h1>
             
-            <p class="contact-intro">
-                Feel free to reach out to me through any of the following channels. 
-                I'm always open to discussing new projects, opportunities, or collaborations!
-            </p>
+            <p class="intro-text">You can reach me using the details below.</p>
+
+            <h2>Contact Details</h2>
             
-            <div class="contact-grid">
-                <div class="contact-item">
-                    <div class="icon">📧</div>
-                    <h3>Email</h3>
-                    <p><a href="mailto:your.email@example.com">your.email@example.com</a></p>
-                    <p style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.9;">Primary contact method</p>
+            <div class="contact-details">
+                <h3>Info</h3>
+                <p><strong>Email:</strong> <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+                <p><strong>GitHub:</strong> <a href="https://github.com/your-username" target="_blank">https://github.com/your-username</a></p>
+                <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/yourprofile" target="_blank">https://linkedin.com/in/yourprofile</a></p>
+                <p><strong>Phone:</strong> +123 456 789 0123</p>
+                <p><strong>CV:</strong> <a href="#" target="_blank">Open PDF</a></p>
+            </div>
+
+            <div class="message-form">
+                <h2>Message (Optional)</h2>
+                
+                <div class="form-note">
+                    This form is a demo (GitHub Pages is static). If you want it to send messages, you can connect Formspree later.
                 </div>
 
-                <div class="contact-item">
-                    <div class="icon">💼</div>
-                    <h3>LinkedIn</h3>
-                    <p><a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p>
-                    <p style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.9;">Professional networking</p>
-                </div>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Your name</label>
+                        <input type="text" id="name" name="name" placeholder="Your name">
+                    </div>
 
-                <div class="contact-item">
-                    <div class="icon">🐱</div>
-                    <h3>GitHub</h3>
-                    <p><a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
-                    <p style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.9;">Check out my projects</p>
-                </div>
+                    <div class="form-group">
+                        <label for="email">Your email</label>
+                        <input type="email" id="email" name="email" placeholder="Your email">
+                    </div>
 
-                <div class="contact-item">
-                    <div class="icon">📱</div>
-                    <h3>Phone</h3>
-                    <p><a href="tel:+1234567890">+123 456 789 0123</a></p>
-                    <p style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.9;">Available 9 AM - 5 PM</p>
-                </div>
+                    <div class="form-group">
+                        <label for="message">Your message</label>
+                        <textarea id="message" name="message" placeholder="Your message"></textarea>
+                    </div>
 
-                <div class="contact-item">
-                    <div class="icon">🌐</div>
-                    <h3>Personal Website</h3>
-                    <p><a href="https://yourwebsite.com" target="_blank">yourwebsite.com</a></p>
-                    <p style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.9;">Portfolio & blog</p>
-                </div>
-
-                <div class="contact-item">
-                    <div class="icon">📍</div>
-                    <h3>Location</h3>
-                    <p>City, Country</p>
-                    <p style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.9;">Open to remote work</p>
-                </div>
+                    <button type="submit" class="send-button">Send</button>
+                </form>
             </div>
         </div>
     </div>
