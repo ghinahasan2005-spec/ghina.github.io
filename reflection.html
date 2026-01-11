@@ -1,101 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Reflection | Ghina Hasan</title>
-  <link rel="stylesheet" href="style.css" />
-  <script defer src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reflection - Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        nav {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 1rem 2rem;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #667eea;
+            font-weight: 600;
+            transition: all 0.3s;
+            font-size: 1rem;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+        }
+
+        nav a:hover, nav a.active {
+            background: #667eea;
+            color: white;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .content-section {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 3rem;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+            animation: fadeIn 0.6s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h1 {
+            color: #764ba2;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .reflection-entry {
+            background: #f8f9ff;
+            padding: 1.5rem;
+            border-radius: 12px;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid #764ba2;
+            transition: transform 0.3s;
+        }
+
+        .reflection-entry:hover {
+            transform: translateX(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .reflection-date {
+            color: #667eea;
+            font-weight: 600;
+            margin-bottom: 0.8rem;
+            font-size: 1.1rem;
+        }
+
+        .reflection-entry p {
+            text-align: justify;
+            line-height: 1.8;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: white;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                gap: 1rem;
+            }
+            nav a {
+                font-size: 0.9rem;
+                padding: 0.4rem 0.8rem;
+            }
+            .content-section {
+                padding: 2rem 1.5rem;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
 </head>
-
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="index.html">
-        <span class="brand-dot"></span>
-        <span>Ghina Hasan</span>
-      </a>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="assignments.html">Assignments</a></li>
+            <li><a href="activities.html">Activities</a></li>
+            <li><a href="reflection.html" class="active">Reflection</a></li>
+            <li><a href="websites.html">Favorite Websites</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
 
-      <nav class="nav" aria-label="Primary">
-        <a class="nav-link" href="index.html">Home</a>
-        <a class="nav-link" href="assignments.html">Assignments</a>
-        <a class="nav-link" href="activities.html">Activities</a>
-        <a class="nav-link active" href="reflection.html">Reflection</a>
-        <a class="nav-link" href="resources.html">Resources</a>
-        <a class="nav-link" href="contact.html">Contact</a>
-      </nav>
+    <div class="container">
+        <div class="content-section">
+            <h1>Self-Assessment & Reflection</h1>
+            
+            <div class="reflection-entry">
+                <div class="reflection-date">📅 Lecture 1 - January 15, 2024 (Synchronous)</div>
+                <p>Today's lecture on HTML fundamentals provided a solid foundation for web development. I found the discussion on semantic HTML particularly enlightening, as it emphasized the importance of writing clean and accessible code. The practical examples helped me understand how proper structure improves both SEO and user experience. I'm excited to apply these concepts in my upcoming projects.</p>
+            </div>
 
-      <div class="header-actions">
-        <button class="btn btn-ghost" id="themeBtn" type="button" aria-label="Toggle theme">🌙</button>
-        <button class="btn btn-ghost mobile-menu-btn" id="menuBtn" type="button" aria-label="Open menu">☰</button>
-      </div>
+            <div class="reflection-entry">
+                <div class="reflection-date">📅 Lecture 2 - January 22, 2024 (Asynchronous)</div>
+                <p>The CSS styling session was incredibly engaging. Learning about Flexbox and Grid layouts opened my eyes to modern web design possibilities. I appreciated the hands-on exercises that demonstrated responsive design principles. The instructor's tips on color theory and visual hierarchy will definitely influence my design choices. I plan to experiment with these techniques in my portfolio project.</p>
+            </div>
+
+            <div class="reflection-entry">
+                <div class="reflection-date">📅 Lecture 3 - January 29, 2024 (Synchronous)</div>
+                <p>JavaScript fundamentals introduced a whole new dimension to web development. Understanding DOM manipulation and event handling made me realize the power of interactive web applications. The debugging session was particularly valuable, teaching me systematic approaches to troubleshooting. I'm looking forward to building more dynamic projects and exploring advanced JavaScript concepts in future lectures.</p>
+            </div>
+
+            <div class="reflection-entry">
+                <div class="reflection-date">📅 Lecture 4 - February 5, 2024 (Synchronous)</div>
+                <p>Today we explored responsive web design and mobile-first approaches. The practical demonstrations showed how modern websites adapt to different screen sizes seamlessly. I learned about media queries and viewport settings, which are crucial for creating accessible websites. This knowledge will be essential for my final project, as I want to ensure my portfolio looks great on all devices.</p>
+            </div>
+
+            <div class="reflection-entry">
+                <div class="reflection-date">📅 Lecture 5 - February 12, 2024 (Asynchronous)</div>
+                <p>The lecture on version control with Git was eye-opening. Understanding how to track changes, collaborate with others, and manage different versions of code is invaluable for any developer. I practiced creating repositories, making commits, and working with branches. This will significantly improve my workflow and collaboration skills in future team projects.</p>
+            </div>
+
+            <div class="reflection-entry">
+                <div class="reflection-date">📅 Lecture 6 - February 19, 2024 (Synchronous)</div>
+                <p>We delved into web accessibility standards and best practices today. Learning about WCAG guidelines and how to make websites usable for people with disabilities was enlightening. I realized that good design isn't just about aesthetics—it's about inclusivity. The demonstration of screen readers and keyboard navigation showed me the importance of proper HTML structure and ARIA labels.</p>
+            </div>
+        </div>
     </div>
 
-    <div class="mobile-nav" id="mobileNav" aria-label="Mobile menu">
-      <a href="index.html" class="mobile-link">Home</a>
-      <a href="assignments.html" class="mobile-link">Assignments</a>
-      <a href="activities.html" class="mobile-link">Activities</a>
-      <a href="reflection.html" class="mobile-link">Reflection</a>
-      <a href="resources.html" class="mobile-link">Resources</a>
-      <a href="contact.html" class="mobile-link">Contact</a>
-    </div>
-  </header>
-
-  <main class="container">
-    <div class="page-head">
-      <h1 class="page-title">Reflection</h1>
-      <p class="muted">Short weekly reflections about what I learned and improved.</p>
-    </div>
-
-    <div class="item">
-      <div class="item-top">
-        <h2 style="margin:0;">Week 1 Reflection</h2>
-        <span class="pill">Week 1</span>
-      </div>
-      <p class="muted">
-        Write 4–6 lines: what you learned, what was confusing, and how you improved.
-      </p>
-    </div>
-
-    <div class="item">
-      <div class="item-top">
-        <h2 style="margin:0;">Week 2 Reflection</h2>
-        <span class="pill">Week 2</span>
-      </div>
-      <p class="muted">Write your reflection here.</p>
-    </div>
-
-    <div class="item">
-      <div class="item-top">
-        <h2 style="margin:0;">Week 3 Reflection</h2>
-        <span class="pill">Week 3</span>
-      </div>
-      <p class="muted">Write your reflection here.</p>
-    </div>
-
-    <div class="item">
-      <div class="item-top">
-        <h2 style="margin:0;">Week 4 Reflection</h2>
-        <span class="pill">Week 4</span>
-      </div>
-      <p class="muted">Write your reflection here.</p>
-    </div>
-
-    <div class="card">
-      <p class="muted" style="margin:0;">
-        Tip: Teachers love reflections that mention “what I tried”, “what I fixed”, and “what I will do next time”.
-      </p>
-    </div>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p class="muted">© <span id="year"></span> Ghina Hasan</p>
-      <div class="footer-links">
-        <a href="resources.html">Resources</a>
-        <a href="contact.html">Contact</a>
-      </div>
-    </div>
-  </footer>
+    <footer>
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
+    </footer>
 </body>
 </html>
